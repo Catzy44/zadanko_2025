@@ -43,7 +43,7 @@ This repository contains a Node.js application that connects to a MongoDB databa
     ```json
     {
         "plot": [/* array of numbers representing the plot embedding */],
-        "candidates": 1536/*optional*/
+        "candidates": 1536 /*optional*/
     }
     ```
 
