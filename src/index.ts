@@ -61,11 +61,10 @@ const bootstrap = async () => {
                     path: "plot_embedding",
                     queryVector: queryVectors,
                     numCandidates: candidates,
-                    limit: candidates,
-                    filter: { year: { $lt: 1950 } }
+                    limit: 10,
+                    filter: { year: { $lt: 1950 } },
                 }
             },
-            { $limit: 10 },
             {
                 $project: { 
                     title: 1, 
